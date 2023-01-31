@@ -45,7 +45,7 @@
 
 .home__dashboard {
   width: 90%;
-  background-color: #f24638;
+  background-color: #4edf79;
   padding: 1rem;
   border-radius: 10px;
   /* height: 25rem; */
@@ -94,8 +94,8 @@
 
 .home__btn--login{
   padding: 1.25rem 1.5rem;
-  border: 3px solid #f24638;
-  color:#f24638;
+  border: 3px solid #38aef2;
+  color:#57ee6b;
   color: var(--section-title);
   background: none;
 }

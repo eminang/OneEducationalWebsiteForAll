@@ -50,19 +50,17 @@ const About = (props) => {
         <h1 className="about__heading">Who we are</h1>
         <div className="about__div">
           <img src={ImgSrc.Education} alt="logo" />
-          <h1>What is EduOne?</h1>
+          <h1>What is AFREDU?</h1>
           <p>
-            EduOne is an e-learning website which provide the students with the
-            option to choose their courses as per their needs. Quizzes, and
-            guidence videos are some of the interaction methods through which
-            students can learn.
+            AFREDU is an AFREDU is an international nonprofit organization dedicated to providing a diverse platform where children, students, adults and corporations can use for structured shared knowledge and culture.
+.
           </p>
         </div>
         <div className="about__div">
           <img src={ImgSrc.Working} alt="logo" />
           <h1>How does it work?</h1>
           <p>
-            Students can create an account and use all the features we provide.
+            Students can create an account and use all the resources and features we provide.
           </p>
         </div>
         <div className="about__div">
@@ -73,55 +71,7 @@ const About = (props) => {
         <br/>
         <br/>
         <h1 className="about__heading">Our Team</h1>
-        <div className="contributors__list">
-          {adminmentors.map((mentor, index) => {
-            return (
-              <div className="contributor" key={index}>
-                <div className="contributor__img">
-                  <img src={mentor.avatar_url} alt="contributor-avatar" />
-                </div>
-                <div className={`contributor__details mentor__details`}>
-                  <a href={mentor.html_url} target="_blank">
-                  <h3><i className="fab fa-github" aria-hidden="true"></i>@{mentor.login}</h3></a>
-                  <p> Project { getrole(mentor.id) }</p>
-                </div>
-              </div>
-              )
-            })
-          }
-        </div>
-        <div className="contributors__list">
-          {contributors.slice(0,viewnumber).map((contributor, index) => {
-            return (
-              <div className="contributor" key={index}>
-                <div className="contributor__img">
-                  <img src={contributor.avatar_url} alt="contributor-pic" />
-                </div>
-                {
-                <div className="contributor__details">
-                  <a href={contributor.html_url} target="_blank">
-                  <h3><i className="fab fa-github" aria-hidden="true"></i>@{contributor.login}</h3></a>
-                  <p>{ getrole(contributor.id) }</p>
-                </div>
-                }
-              </div>
-              )
-            })
-          }
-        </div>
-        <div className="view__options">
-          { viewnumber < contributors.length ?
-          <button className="view__more--button" onClick={ handleViewMore }>
-            View More
-          </button>
-          : null }
-          { viewnumber > contributors.length ?
-          <button className="view__more--button" onClick={ handleViewLess }>
-            View Less
-          </button>
-        : null }
-        </div>
-        <Scrolltop showBelow={250} />
+        
       </section>
       <Footer />
     </div>
